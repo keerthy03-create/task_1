@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <title>Task 1</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+
+  
+  <header class="bg-blue-500/30 backdrop-blur-md border border-blue-500/30 w-full h-16">
+    <div class="flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold">Logo</h1>
+
+      <nav class="space-x-6 hidden md:block">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Services</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <button onclick="toggleDark()" class="bg-blue-500 text-white px-3 py-1 rounded">
+        dark button
+      </button>
+    </div>
+  </header>
+
+  
+  <div class="text-center pt-32 pb-20">
+    <h1 class="text-4xl font-bold mb-4">We Build Digital Experiences</h1>
+    <button class="bg-blue-500 text-white px-6 py-2 rounded hover:scale-110 transition">
+      Get Started
+    </button>
+  </div>
+
+  <div class="text-center px-6 pb-20">
+    <h2 class="text-2xl font-bold mb-8">Services Provided</h2>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      
+      <div class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-lg">SEO</h3>
+        <p>Improve your website visibility on search engines</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-lg">Web Development</h3>
+        <p>Create responsive websites</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-lg">Marketing</h3>
+        <p>Grow your brand and reach the audience </p>
+      </div>
+
+    </div>
+</div>
+
+
+  <footer class="text-center bg-gray-800 text-white py-6">
+    <p>All rights reserved</p>
+  </footer>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("bg-gray-900");
+    }
+  </script>
+
+</body>
+</html>
